@@ -187,7 +187,7 @@ footer .barra-footer {
         right: 0;
         width: 50%;
         height: 52vh;
-        
+        margin-top: 25px;
 
         border-radius: 10px;
 
@@ -195,8 +195,7 @@ footer .barra-footer {
         flex-direction: column;
         justify-content: space-around;
         align-items: center;
-        transform: translateX(100%);
-        transition: transform 0.3s ease-in;
+        visibility: hidden;
         z-index: 100;
     }
 
@@ -208,7 +207,7 @@ footer .barra-footer {
         margin-top: -50px;
     }
     .menu.active {
-        transform: translateX(0);
+        visibility: visible;
     }
 
     header .menu li {
