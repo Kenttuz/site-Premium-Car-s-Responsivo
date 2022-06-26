@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Premium Car's</title>
+
+        <link rel="stylesheet" href="stylePaginas.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@700&display=swap"
+            rel="stylesheet"
+        />
+
+        <link
+            rel="stylesheet"
+            href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+            integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+            crossorigin="anonymous"
+        />
+
+        <style>
+            body {
+                background: linear-gradient(
+                    to right,
+                    rgb(218, 223, 226),
+                    rgb(84, 82, 79)
+                );
+            }
+
+            .card {
+                background: linear-gradient(
+                    to right,
+                    rgb(218, 223, 226),
+                    rgb(84, 82, 79)
+                );
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <a class="logo" href="../index.html"
+                ><img src="../assets/Premium-Cars.png" alt="LogoPremium"
+            /></a>
+
+            <h2>Reserve um veículo com facilidade!</h2>
+            <ul class="menu">
+                <li><a class="button" href="#Ajuda">Ajuda</a></li>
+                <li><a class="button" href="../index.html">Sair</a></li>
+            </ul>
+        </header>
+        <button aria-expanded="false" aria-label="Abrir menu" class="open-menu">
+            <svg
+                width="40"
+                height="40"
+                viewBox="0 0 40 40"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+            >
+                <path
+                    d="M10 20H30"
+                    stroke="#00856F"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                />
+                <path
+                    d="M10 12H30"
+                    stroke="#00856F"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                />
+                <path
+                    d="M18 28L30 28"
+                    stroke="#00856F"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                />
+            </svg>
+        </button>
+
+        <section id="home">
+            <img
+                class="background_header"
+                src="../assets/bk_header.png"
+                alt="bk_header_bmw"
+            />
+
+            <div class="barra-home"><p>Cadastro de Veículo</p></div>
+        </section>
+
+        <div class="card">
+            <div class="card-header">
+                <h5 class="mb-0">
+                    Vamos começar! Preencha os dados do veículo:
+                </h5>
+            </div>
+            <div class="card-body">
+                <form action="" class="container-fluid">
+                    <div action="" class="form-row">
+                        <div class="col-12 col-md-4">
+                            <div class="form-group">
+                                <label for="marca">Marca</label>
+                                <select id="marca" class="form-control">
+                                    <option value="opcaoInicial">
+                                        Selecione
+                                    </option>
+                                    <option value="BMW">BMW</option>
+                                    <option value="CHEVROLET">Chevrolet</option>
+                                    <option value="FIAT">Fiat</option>
+                                    <option value="FORD">Ford</option>
+                                    <option value="MAZDA">Mazda</option>
+                                    <option value="MERCEDES">Mercedes</option>
+                                    <option value="MITSUBISHI">
+                                        Mitsubishi
+                                    </option>
+                                    <option value="SUBARU">Subaru</option>
+                                    <option value="TOYOTA">Toyota</option>
+                                    <option value="HONDA">Honda</option>
+                                    <option value="Outro">Outro</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-4">
+                            <div class="form-group">
+                                <label for="modelo">Modelo</label>
+                                <select id="modelo" class="form-control">
+                                    <option value="opcaoInicial">
+                                        Selecione
+                                    </option>
+                                    <option value="Sedan">Sedan</option>
+                                    <option value="Hatch">Hatch</option>
+                                    <option value="SUV">SUV</option>
+                                    <option value="Esportivo">Esportivo</option>
+                                    <option value="Outro">Outro</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-4">
+                            <div class="form-group">
+                                <!--label sempre estará associado a um input de tal id-->
+                                <label for="placa">Placa</label>
+                                <input
+                                    type="cadastro"
+                                    class="form-control"
+                                    id="placa"
+                                    placeholder="Informe a placa do veículo"
+                                />
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-12 col-md-6">
+                            <div class="form-group">
+                                <label for="anoCarro">Ano do Carro</label>
+                                <select id="anoCarro" class="form-control">
+                                    <option value="opcaoInicial">
+                                        Selecione
+                                    </option>
+                                    <option value="Sedan">2019</option>
+                                    <option value="Hatch">2020</option>
+                                    <option value="SUV">2021</option>
+                                    <option value="Esportivo">2022</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6">
+                            <div class="form-group">
+                                <!--label sempre estará associado a um input de tal id-->
+                                <label for="cor">Cor</label>
+                                <input
+                                    type="text"
+                                    class="form-control"
+                                    id="cor"
+                                    placeholder="Informe a cor do veículo"
+                                />
+                            </div>
+                        </div>
+                    </div>
+                    <hr />
+
+                    <div class="col-12 d-flex justify-content-end">
+                        <button class="btn btn-primary mr-3" type="submit">
+                            Salvar
+                        </button>
+                        <!--PARA LIMPAR O FORMULÁRIO-->
+                        <button class="btn btn-secondary" type="reset">
+                            Cancelar
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <footer>
+            <div class="barra-footer" style="margin-top: 236px"></div>
+        </footer>
+
+        <!-- SCRIPT -->
+        <script
+            src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+            crossorigin="anonymous"
+        ></script>
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+            integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+            crossorigin="anonymous"
+        ></script>
+        <script
+            src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+            integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+            crossorigin="anonymous"
+        ></script>
+        <script src="../main.js"></script>
+    </body>
+</html>

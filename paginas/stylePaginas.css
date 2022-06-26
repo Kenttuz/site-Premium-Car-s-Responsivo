@@ -1,0 +1,264 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+    font-family: 'Fira Sans', sans-serif;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+
+    background-color: rgba(182, 182, 182, 0.795);
+}
+
+/* HEADER =========================== */
+header {
+    display: flex;
+    box-shadow: 0px 5px 20px;
+
+    width: 100%;
+    height: 129px;
+    z-index: 100;
+}
+
+header .logo img {
+    width: 314px;
+    height: 50px;
+
+    margin-top: 10px;
+    margin-left: 31px;
+}
+
+header h2 {
+    color: white;
+
+    margin-top: 28px;
+    margin-left: 81px;
+
+    font-size: 20px;
+}
+
+header .menu {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+
+    margin-left: 1150px;
+}
+
+.menu li {
+    color: black;
+
+    text-decoration: none;
+    padding: 0px 9px;
+}
+
+.menu li a {
+    color: black;
+    font-weight: bold;
+
+    display: block;
+    text-decoration: none;
+    padding: 0px 27px;
+}
+
+.menu .button {
+    height: 40px;
+    display: flex;
+    align-items: center;
+    border: 1px solid black;
+    margin-top: -70px;
+
+    border-radius: 3px;
+    background-color: rgba(255, 255, 255, 0.864);
+}
+
+.menu .button:hover {
+    background-color: rgba(128, 125, 125, 0.878);
+    transition: background 250ms;
+}
+
+.menu .button2 {
+    height: 40px;
+    display: flex;
+    align-items: center;
+    border: 1px solid black;
+    margin-top: -70px;
+
+    border-radius: 3px;
+    background-color: rgba(255, 255, 255, 0.864);
+}
+
+.menu .button2:hover {
+    background-color: rgba(128, 125, 125, 0.878);
+    transition: background 250ms;
+}
+
+.open-menu {
+    position: absolute;
+    width: 35px;
+    display: flex;
+    z-index: 100;
+    visibility: hidden;
+    margin-left: 85%;
+    margin-top: -80px;
+
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.721);
+    border: 1px solid rgb(0, 36, 0);
+    cursor: pointer;
+}
+
+.open-menu:hover {
+    background-color: rgba(255, 255, 255, 0.303);
+    transition: background 250ms;
+}
+
+/* HOME =========================== */
+body .barra-home {
+    display: flex;
+    width: 100%;
+    height: 32px;
+    background-color: rgba(196, 54, 3, 0.636);
+
+    margin-top: 0px;
+    border: 1px solid black;
+    border-radius: 20px;
+}
+
+.barra-home p {
+    margin-top: 5px;
+    margin-left: 70px;
+
+    font-weight: bold;
+    font-size: 20px;
+}
+
+#home .background_header {
+    position: relative;
+    display: block;
+    width: 100%;
+    margin-top: -129px;
+    height: 129px;
+
+    z-index: -1;
+}
+
+label {
+    font-size: 15px;
+}
+
+section .footer {
+    list-style: none;
+    display: flex;
+    width: 100%;
+
+    margin-top: 30px;
+}
+
+footer .barra-footer {
+    display: flex;
+    width: 100%;
+    height: 32px;
+    background-color: rgba(196, 54, 3, 0.636);
+
+    margin-top: 0px;
+    border-top: 1px solid black;
+}
+@media (max-width: 1390px) {
+    body {
+        overflow-x: hidden;
+    }
+
+    .open-menu {
+        visibility: visible;
+        margin-top: -115px;
+        overflow: visible;
+
+        z-index: 100;
+    }
+
+    header .menu {
+        position: absolute;
+        top: 6vh;
+        right: 0;
+        width: 50%;
+        height: 52vh;
+        
+
+        border-radius: 10px;
+
+        background: rgb(196, 54, 3);
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        transform: translateX(100%);
+        transition: transform 0.3s ease-in;
+        z-index: 100;
+    }
+
+    .menu .button {
+        margin-top: 0px;
+    }
+
+    .menu .button2 {
+        margin-top: -50px;
+    }
+    .menu.active {
+        transform: translateX(0);
+    }
+
+    header .menu li {
+        margin: 0;
+        opacity: 0;
+    }
+
+    @keyframes menuLinkFade {
+        from {
+            opacity: 0;
+            transform: translateX(50px);
+        }
+        to {
+            opacity: 1;
+            transform: translateX(0);
+        }
+    }
+
+    header .logo img {
+        width: 214px;
+        height: 39px;
+
+        margin-left: 0px;
+    }
+
+    header h2 {
+        position: absolute;
+        margin-top: 20px;
+        margin-left: 10px;
+
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 355px) {
+    header .menu {
+        width: 100%;
+        z-index: 100;
+        overflow: hidden;
+
+        align-items: center;
+    }
+    .menu .button {
+        width: 100px;
+        margin-top: -30px;
+    }
+
+    .menu .button2 {
+        margin-top: -150px;
+        margin-left: 0px;
+        width: 100px;
+    }
+}

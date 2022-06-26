@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Premium Car's</title>
+
+        <link rel="stylesheet" href="stylePaginas.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@700&display=swap"
+            rel="stylesheet"
+        />
+
+        <link
+            rel="stylesheet"
+            href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+            integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+            crossorigin="anonymous"
+        />
+
+        <style>
+            body {
+                background: linear-gradient(
+                    to right,
+                    rgb(218, 223, 226),
+                    rgb(84, 82, 79)
+                );
+            }
+
+            .card {
+                background: linear-gradient(
+                    to right,
+                    rgb(218, 223, 226),
+                    rgb(84, 82, 79)
+                );
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <a class="logo" href="../index.html"
+                ><img src="../assets/Premium-Cars.png" alt="LogoPremium"
+            /></a>
+
+            <h2>Reserve um veículo com facilidade!</h2>
+            <ul class="menu">
+                <li><a class="button" href="#Ajuda">Ajuda</a></li>
+                <li><a class="button" href="../index.html">Sair</a></li>
+            </ul>
+        </header>
+        <button aria-expanded="false" aria-label="Abrir menu" class="open-menu">
+            <svg
+                width="40"
+                height="40"
+                viewBox="0 0 40 40"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+            >
+                <path
+                    d="M10 20H30"
+                    stroke="#00856F"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                />
+                <path
+                    d="M10 12H30"
+                    stroke="#00856F"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                />
+                <path
+                    d="M18 28L30 28"
+                    stroke="#00856F"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                />
+            </svg>
+        </button>
+
+        <section id="home">
+            <img
+                class="background_header"
+                src="../assets/bk_header.png"
+                alt="bk_header_bmw"
+            />
+
+            <div class="barra-home"><p>Cadastro de Usuário</p></div>
+        </section>
+
+        <div class="card">
+            <div class="card-header">
+                <h5 class="mb-0">Vamos começar! Preencha seus dados:</h5>
+            </div>
+            <div class="card-body">
+                <form action="" class="container-fluid">
+                    <div action="" class="form-row">
+                        <div class="col-12 col-md-4">
+                            <div class="form-group">
+                                <!--label sempre estará associado a um input de tal id-->
+                                <label for="matricula">Matrícula</label>
+                                <input
+                                    type="cadstro"
+                                    class="form-control"
+                                    id="matricula"
+                                    placeholder="Informe sua matrícula"
+                                />
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-4">
+                            <div class="form-group">
+                                <!--label sempre estará associado a um input de tal id-->
+                                <label for="nomeCompleto">Nome Completo</label>
+                                <input
+                                    type="text"
+                                    class="form-control"
+                                    id="nomeCompleto"
+                                    placeholder="Informe seu nome completo"
+                                />
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-4">
+                            <div class="form-group">
+                                <!--label sempre estará associado a um input de tal id-->
+                                <label for="cpf">CPF</label>
+                                <input
+                                    type="cpf"
+                                    class="form-control"
+                                    id="cpf"
+                                    placeholder="Informe um cpf"
+                                />
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--OLHAR OS TIPOS DE INPUTS NA DOCUMENTAÇÃO DO BOOT-->
+                    <div class="form-row">
+                        <div class="col-12 col-md-4">
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <div class="input-group">
+                                    <!--input-group-prepend (FEITO PARA COLOCAR O @ ANTES DA ESCRITA DO EMAIL)-->
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text">@</span>
+                                    </div>
+                                    <input
+                                        type="email"
+                                        class="form-control"
+                                        id="email"
+                                        placeholder="Informe o email"
+                                    />
+                                </div>
+                                <small class="form-text text-muted">
+                                    Enviaremos um e-mail para confirmar o
+                                    cadastro.
+                                </small>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-4">
+                            <div class="form-group">
+                                <!--label sempre estará associado a um input de tal id-->
+                                <label for="fone">Fone</label>
+                                <input
+                                    type="fone"
+                                    class="form-control"
+                                    id="fone"
+                                    placeholder="Informe seu número de telefone"
+                                />
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-4">
+                            <div class="form-group">
+                                <!--label sempre estará associado a um input de tal id-->
+                                <label for="data">Data de Nascimento</label>
+                                <input
+                                    type="date"
+                                    class="form-control"
+                                    id="dataNascimento"
+                                />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="col-12 col-md-6">
+                            <div class="form-group">
+                                <!--label sempre estará associado a um input de tal id-->
+                                <label for="senha">Senha</label>
+                                <input
+                                    type="password"
+                                    class="form-control"
+                                    id="senha"
+                                    placeholder="Crie uma senha"
+                                />
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6">
+                            <div class="form-group">
+                                <!--label sempre estará associado a um input de tal id-->
+                                <label for="confirmarSenha"
+                                    >Confirmar Senha</label
+                                >
+                                <input
+                                    type="password"
+                                    class="form-control"
+                                    id="confirmarSenha"
+                                    placeholder="ConfirmeSenha"
+                                />
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="col-12">
+                            <div class="form-check mt-3">
+                                <input
+                                    class="form-check-input"
+                                    type="checkbox"
+                                    value=""
+                                    id="defaultCheck1"
+                                />
+                                <label
+                                    class="form-check-label"
+                                    for="defaultCheck1"
+                                >
+                                    Aceito receber atualizações no meu e-mail
+                                    sobre novos itens.
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <hr />
+                    <div class="form-row mb-0">
+                        <div class="col-12 d-flex justify-content-end">
+                            <button class="btn btn-primary mr-3" type="submit">
+                                Salvar
+                            </button>
+                            <!--PARA LIMPAR O FORMULÁRIO-->
+                            <button class="btn btn-secondary" type="reset">
+                                Cancelar
+                            </button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <footer>
+            <div class="barra-footer" style="margin-top: 86px"></div>
+        </footer>
+        <!-- SCRIPT -->
+        <script
+            src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+            crossorigin="anonymous"
+        ></script>
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+            integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+            crossorigin="anonymous"
+        ></script>
+        <script
+            src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+            integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+            crossorigin="anonymous"
+        ></script>
+        <script src="../main.js"></script>
+    </body>
+</html>
