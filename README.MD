@@ -7,6 +7,6 @@
 
 <h1>Visualização do Site</h1>
 <p>Para fazer a visualização do site, basta acessar o link:
-[https://kenttuz.github.io/site-Premium-Car-s-Responsivo/](https://kenttuz.github.io/SiteReservaDeCarros-Responsivo-Form/">https://kenttuz.github.io/site-Premium-Car-s-Responsivo/)
+https://kenttuz.github.io/site-Premium-Car-s-Responsivo/
 
 ## OBS: Pretendo ajustar o design deste site, pois foi meu primeiro contato com programação, então pretendo melhorar sua qualidade...
