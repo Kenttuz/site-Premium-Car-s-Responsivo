@@ -1,6 +1,6 @@
 # Premium Car's
 
-<h4 align="center">Projeto parcialemnte concluído...✔️</h4><br>
+<h4 align="center">Projeto parcialmente concluído...✔️</h4><br>
 
 <p>Este projeto foi feito para <strong>testar a responsividade com GRID, bootstrap e funcionalidades JS </strong>para o menu em telas menores e formulários com o próprio bootstrap.
 <p>O desenvolvimento inteiro foi feito no Visual Studio Code, com o design criado por mim em minha primeiro matéria que tive na faculdade, por isso deixa a desejar em alguns aspectos, mas o foco é na responsividade dos elementos.</p><br>
